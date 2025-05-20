@@ -12,15 +12,15 @@ load_dotenv()
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
-EVAL = list(map(int, getenv("EVAL", "7877197608 7877197608").split()))
+EVAL = list(map(int, getenv("EVAL", "7717429408").split()))
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","Ownergit")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "NexikoBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Gitaristmusicbot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "Nexiko")
+BOT_NAME = getenv("BOT_NAME" , "🎸𝐆𝖎𝖙𝖆𝖗𝖎𝖘𝖙 𝕸𝖚𝖘𝖎𝖈🎸")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
 # ---------------------------------------------------------
@@ -37,10 +37,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002349110401))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002465942772))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7427691214))
+OWNER_ID = int(getenv("OWNER_ID", 7717429408))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -168,7 +168,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:180"))
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
