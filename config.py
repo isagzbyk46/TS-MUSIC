@@ -12,7 +12,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 
-EVAL = list(map(int, getenv("EVAL", "7717429408").split()))
+EVAL = list(map(int, getenv("EVAL", "7717429408 7717429408").split()))
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
@@ -22,7 +22,7 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "Gitaristmusicbot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "🎸𝐆𝖎𝖙𝖆𝖗𝖎𝖘𝖙 𝕸𝖚𝖘𝖎𝖈🎸")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
+ASSUSERNAME = getenv("ASSUSERNAME" , "🎸𝐆𝖎𝖙𝖆𝖗𝖎𝖘𝖙 𝕸𝖚𝖘𝖎𝖈")
 # ---------------------------------------------------------
 
 
@@ -168,7 +168,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:180"))
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
